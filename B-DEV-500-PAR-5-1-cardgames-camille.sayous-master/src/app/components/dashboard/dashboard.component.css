@@ -1,0 +1,231 @@
+app-display-weather{
+    margin-top: 120px;
+}
+
+app-movies {
+    margin-top: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+grid-auto-rows: minmax(100px, auto);
+}
+
+button {
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+button::after {
+  text-decoration: none;
+}
+
+button::selection {
+  text-decoration: none;
+}
+
+
+
+.add {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.del {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+
+
+.carda{
+  margin-left: 300px;
+  margin-top: 20px;
+  width: 850px;
+  height: 470px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background: linear-gradient(to top,white,black 100%);
+
+}
+
+.cardu {
+  margin-left: 300px;
+  margin-top: 20px;
+  width: 850px;
+  height: 470px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background: linear-gradient(to top,white,black 100%);
+
+}
+
+.cardo {
+  margin-top: -520px;
+  margin-left: 520px;
+    width: 350px;
+    height:510px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: linear-gradient(to top, #00ff09 0,black 100%);
+
+
+}
+
+.carde {
+  margin-left: 230px;
+  margin-top: 20px;
+  width: 970px;
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background: linear-gradient(to top,white,black 100%);
+
+  
+}
+
+
+.carder {
+  margin-left: 230px;
+  width: 970px;
+  height: 380px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background: linear-gradient(to top,white,black 100%);
+
+  
+}
+
+
+.cardy {
+  margin-left: -110px;
+
+    width: 370px;
+    height: 510px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: linear-gradient(to top,white,red 100%);
+ 
+    
+}
+
+/* The switch - the box around the slider */
+.switch {
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    width: 57px;
+    height: 28px;
+    margin-top: -115px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e61c2f;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #aeffb0;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #aeffb0;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .card {
+    width: 350px;
+    height:510px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: linear-gradient(to top,#5ee7df 0,#66a6ff 100%);
+
+  }
+
+/* On mouse-over, add a deeper shadow */
+
+  
+  
+ 
+ 
+  .carda:hover {
+    box-shadow: 0 8px 26px 0 rgba(0,0,0,0.2);
+  }
+
+  
+  
+  /* Add some padding inside the card container */
+  .container {
+
+  }
+
+  .container div {
+    display: inline-block;
+    
+  }
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+}

@@ -1,0 +1,82 @@
+.row {
+    margin-left: 3px;
+}
+.card {
+    margin: 5%;
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem 0;
+}
+
+.repo {
+    width: 770px;
+
+}
+
+.container {
+    margin-left: 100px;
+}
+
+.row {
+}
+
+.card-body {
+   
+
+}
+
+.cardu {
+    margin-bottom: 50px;
+    margin-left: 320px;
+    width: 850px;
+    height: 470px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: linear-gradient(to top,white,black 100%);
+
+}
+
+.cardu:hover {
+    box-shadow: 0 8px 26px 0 rgba(0,0,0,0.2);
+  }
+
+
+
+.cal {
+    width: 250px;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+}
+
+p{
+    font-size: 10px;
+    color: black;
+}
+
+strong {
+    font-size: 13px;
+    color: black;
+}
+
+form {
+    margin-left: 100px;
+}
+
+.form-control {
+    width: 250px;
+    margin-left: 40px;
+}
+
+.carde {
+    display: flex;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}

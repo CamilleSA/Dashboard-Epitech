@@ -1,0 +1,225 @@
+
+<!-- Top navigation -->
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0">
+    <img class="brand-logo" src="assets/Logo-Dashboard.png" alt="dashboard Logo">
+  </a>
+</nav>
+
+<!-- Sidebar navigation -->
+<div class="container-fluid">
+  <div class="row">
+
+    <nav class="col-md-2 d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a  href="/userdash" class="nav-link">
+              <i class="fas fa-user"></i>User Profile
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" >
+              <i class="fas fa-chart-line"></i>Dashboard
+              
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-folder-plus"></i>Widget
+              
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-cloud"></i>Weather   
+
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentWeather(weatherCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentWeather()">-</button>
+
+
+              
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-film"></i>Cinema 
+            
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentMovie(movieCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentMovie()">-</button>
+            </a>
+          </li>
+
+         
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-search"></i>Search Movies 
+            
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentSearchMovie(searchCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentSearchMovie()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-dollar-sign"></i>Currency Exchange 
+             
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentExchange(exchangeCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentExchange()">-</button> 
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="far fa-newspaper"></i>News
+            
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentNews(newsCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentNews()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fab fa-github"></i>User Github 
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentGithub(githubCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentGithub()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-folder"></i>Repository Github 
+              
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentRepo(repoCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentRepo()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fab fa-youtube"></i>Youtube 
+              
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentYoutube(youtubeCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentYoutube()">-</button>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <i class="fas fa-calculator"></i>Calculator 
+              
+              <button class="w3-button w3-circle w3-green" (click)="addNewComponentCalculator(calcuCompo)">+</button>
+              <button class="w3-button w3-circle w3-red" (click)="removeComponentCalculator()">-</button>
+            </a>
+          </li>
+
+
+          <!-- Calling SignOut() Api from AuthService -->
+          <li class="nav-item">
+            <a class="nav-link" (click)="authService.SignOut()">
+              <i class="fas fa-sign-out-alt"></i>Log out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div id="comp-rendere" *ngIf="display_news">
+        <app-news></app-news>
+    
+      </div>
+      
+
+<br>
+
+<div class="wrapper">
+  <div class="card"id="comp-render" *ngIf="display">
+    <div class="container">
+  <app-display-weather #displaiy></app-display-weather>
+  <app-selection (onSelection)="displaiy.update($event)"></app-selection>
+  </div>
+</div>
+<div>
+  <!-- Use ng-template to ensure that the generated components end up in the right place -->
+ <div class="container">
+  <div class="row">
+    <ng-template  class="row" #containerNews>
+
+    </ng-template>
+    <ng-template  class="row" #containerWeather>
+
+    </ng-template> 
+    
+    <ng-template  class="row" #containerMovie>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerSearchMovie>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerExchange>
+
+    </ng-template>
+
+
+    
+
+
+    <ng-template  class="row" #containerGithub>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerRepo>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerYoutube>
+
+    </ng-template>
+
+
+    <ng-template  class="row" #containerCalculator>
+
+    </ng-template>
+
+  </div>
+  </div>
+</div>
+<div>
+	<ng-template #viewContainerRef></ng-template>
+</div>
+
+  
+</div>
+<br>
+
+<br>
+
+
+
+
+  
+
+
+
+  
+
+
+    </main>
+
+    
+
+  </div>
+</div>

@@ -1,0 +1,704 @@
+@import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
+
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+h2 {
+	color: #00ff09;
+}
+
+.exchange-card {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: black;
+  border-radius: 4px;
+  margin-top: -20px;
+}
+
+.control-label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color:#00ff09;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+
+.input-group-prepend {
+	display: flex;
+}
+
+.p-dropdown {
+      width: 130px;
+      height: 39px;
+      border: 1px solid black;
+      border-right: 0;
+      border-radius: 5px;
+      border-top-right-radius: 0;
+	  border-bottom-right-radius: 0;
+	  background-color: black;
+}
+
+p-dropdown {
+	background-color: black;
+
+}
+
+.cardo {
+	margin-bottom: 50px;
+	margin-left: 500px;
+	  width: 350px;
+	  height:510px;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	  border-radius: 5px; /* 5px rounded corners */
+	  background: linear-gradient(to top, #00ff09 0,black 100%);
+  
+  
+  }
+
+  .cardo:hover {
+    box-shadow: 0 8px 26px 0 rgba(0,0,0,0.2);
+  }
+
+.form-control {
+    position: relative;
+    display: block;
+    flex: 1 1 auto;
+    width: 1%;
+    height: calc(1.5em + .75rem + 3px);
+    min-width: 0;
+    margin-bottom: 0;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #00ff09;
+    background-color:black;
+    background-clip: padding-box;
+    border: 1px solid #00ff09;
+	border-radius: 5px;
+}
+
+.form-control:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+}
+
+.exchange-rate {
+  position: relative;
+  padding: 25px;
+  padding-right: 0;
+}
+.exchange-rate:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 10px;
+    border-left: 1px solid black;
+}
+
+.exchange-rate:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: 10px;
+    width: 7px;
+    height: 7px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(-45deg);
+}
+.exchange-rate-card {
+    padding: 15px;
+    background-color: black;
+    border: 1px solid #00ff09;
+	border-radius: 5px;
+	color: #00ff09;
+}
+
+.exchange-rate-label {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #00ff09;
+    border-bottom: 1px dashed #00ff09;
+}
+
+.exchange-rate-item {
+    font-weight: 700;
+    color:#00ff09 ;
+}
+
+span.flag {
+	width: 44px;
+	height: 30px;
+	display: inline-block;
+}
+
+img.flag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  margin-right: 10px;
+}
+
+span {
+	color: #00ff09;
+}
+
+.flag {
+	background: url('../../../assets/flags_responsive.png');
+	background-size: 100%;
+	vertical-align: middle;
+}
+
+.flag-aud {
+	background-position: 0 5.785124%
+}
+
+.flag-bgn {
+	background-position: 0 9.090909%
+}
+
+.flag-brl {
+	background-position: 0 11.983471%
+}
+
+.flag-cad {
+	background-position: 0 14.876033%
+}
+
+.flag-chf {
+	background-position: 0 16.942149%
+}
+
+.flag-cny {
+	background-position: 0 19.008264%
+}
+
+.flag-czk {
+	background-position: 0 21.900826%
+}
+
+.flag-dkk {
+	background-position: 0 23.140496%
+}
+
+.flag-eur {
+	background-position: 0 26.446281%
+}
+
+.flag-gbp {
+	background-position: 0 33.884298%
+}
+
+.flag-hkd {
+	background-position: 0 37.190083%
+}
+
+.flag-hrk {
+	background-position: 0 38.429752%
+}
+
+.flag-huf {
+	background-position: 0 39.256198%
+}
+
+.flag-idr {
+	background-position: 0 39.669421%
+}
+
+.flag-ils {
+	background-position: 0 40.495868%
+}
+
+.flag-inr {
+	background-position: 0 40.909091%
+}
+
+.flag-isk {
+	background-position: 0 42.561983%
+}
+
+.flag-jpy {
+	background-position: 0 44.214876%
+}
+
+.flag-krw {
+	background-position: 0 47.520661%
+}
+
+.flag-ma {
+	background-position: 0 53.719008%
+}
+
+.flag-mc {
+	background-position: 0 54.132231%
+}
+
+.flag-md {
+	background-position: 0 54.545455%
+}
+
+.flag-me {
+	background-position: 0 54.958678%
+}
+
+.flag-mg {
+	background-position: 0 55.371901%
+}
+
+.flag-mh {
+	background-position: 0 55.785124%
+}
+
+.flag-mk {
+	background-position: 0 56.198347%
+}
+
+.flag-ml {
+	background-position: 0 56.61157%
+}
+
+.flag-mm {
+	background-position: 0 57.024793%
+}
+
+.flag-mn {
+	background-position: 0 57.438017%
+}
+
+.flag-mo {
+	background-position: 0 57.85124%
+}
+
+.flag-mp {
+	background-position: 0 58.264463%
+}
+
+.flag-mq {
+	background-position: 0 58.677686%
+}
+
+.flag-mr {
+	background-position: 0 59.090909%
+}
+
+.flag-ms {
+	background-position: 0 59.504132%
+}
+
+.flag-mt {
+	background-position: 0 59.917355%
+}
+
+.flag-mu {
+	background-position: 0 60.330579%
+}
+
+.flag-mv {
+	background-position: 0 60.743802%
+}
+
+.flag-mw {
+	background-position: 0 61.157025%
+}
+
+.flag-mxn {
+	background-position: 0 61.570248%
+}
+
+.flag-my {
+	background-position: 0 61.983471%
+}
+
+.flag-mz {
+	background-position: 0 62.396694%
+}
+
+.flag-na {
+	background-position: 0 62.809917%
+}
+
+.flag-nc {
+	background-position: 0 63.22314%
+}
+
+.flag-ne {
+	background-position: 0 63.636364%
+}
+
+.flag-nf {
+	background-position: 0 64.049587%
+}
+
+.flag-ng {
+	background-position: 0 64.46281%
+}
+
+.flag-ni {
+	background-position: 0 64.876033%
+}
+
+.flag-nl {
+	background-position: 0 65.289256%
+}
+
+.flag-no {
+	background-position: 0 65.702479%
+}
+
+.flag-np {
+	background-position: 0 66.115702%
+}
+
+.flag-nr {
+	background-position: 0 66.528926%
+}
+
+.flag-nu {
+	background-position: 0 66.942149%
+}
+
+.flag-nz {
+	background-position: 0 67.355372%
+}
+
+.flag-omr {
+	background-position: 0 67.768595%
+}
+
+.flag-pa {
+	background-position: 0 68.181818%
+}
+
+.flag-pe {
+	background-position: 0 68.595041%
+}
+
+.flag-pf {
+	background-position: 0 69.008264%
+}
+
+.flag-pg {
+	background-position: 0 69.421488%
+}
+
+.flag-ph {
+	background-position: 0 69.834711%
+}
+
+.flag-pk {
+	background-position: 0 70.247934%
+}
+
+.flag-pl {
+	background-position: 0 70.661157%
+}
+
+.flag-pm {
+	background-position: 0 71.07438%
+}
+
+.flag-pn {
+	background-position: 0 71.487603%
+}
+
+.flag-pr {
+	background-position: 0 71.900826%
+}
+
+.flag-pt {
+	background-position: 0 72.31405%
+}
+
+.flag-pw {
+	background-position: 0 72.727273%
+}
+
+.flag-py {
+	background-position: 0 73.140496%
+}
+
+.flag-qar {
+	background-position: 0 73.553719%
+}
+
+.flag-re {
+	background-position: 0 73.966942%
+}
+
+.flag-ro {
+	background-position: 0 74.380165%
+}
+
+.flag-rs {
+	background-position: 0 74.793388%
+}
+
+.flag-ru {
+	background-position: 0 75.206612%
+}
+
+.flag-rw {
+	background-position: 0 75.619835%
+}
+
+.flag-sa {
+	background-position: 0 76.033058%
+}
+
+.flag-sb {
+	background-position: 0 76.446281%
+}
+
+.flag-sc {
+	background-position: 0 76.859504%
+}
+
+.flag-sd {
+	background-position: 0 77.272727%
+}
+
+.flag-se {
+	background-position: 0 77.68595%
+}
+
+.flag-sg {
+	background-position: 0 78.099174%
+}
+
+.flag-sh {
+	background-position: 0 78.512397%
+}
+
+.flag-si {
+	background-position: 0 78.92562%
+}
+
+.flag-sj {
+	background-position: 0 79.338843%
+}
+
+.flag-sk {
+	background-position: 0 79.752066%
+}
+
+.flag-sl {
+	background-position: 0 80.165289%
+}
+
+.flag-sm {
+	background-position: 0 80.578512%
+}
+
+.flag-sn {
+	background-position: 0 80.991736%
+}
+
+.flag-so {
+	background-position: 0 81.404959%
+}
+
+.flag-sr {
+	background-position: 0 81.818182%
+}
+
+.flag-ss {
+	background-position: 0 82.231405%
+}
+
+.flag-st {
+	background-position: 0 82.644628%
+}
+
+.flag-sv {
+	background-position: 0 83.057851%
+}
+
+.flag-sy {
+	background-position: 0 83.471074%
+}
+
+.flag-sz {
+	background-position: 0 83.884298%
+}
+
+.flag-tc {
+	background-position: 0 84.297521%
+}
+
+.flag-td {
+	background-position: 0 84.710744%
+}
+
+.flag-tf {
+	background-position: 0 85.123967%
+}
+
+.flag-tg {
+	background-position: 0 85.53719%
+}
+
+.flag-th {
+	background-position: 0 85.950413%
+}
+
+.flag-tj {
+	background-position: 0 86.363636%
+}
+
+.flag-tk {
+	background-position: 0 86.77686%
+}
+
+.flag-tl {
+	background-position: 0 87.190083%
+}
+
+.flag-tm {
+	background-position: 0 87.603306%
+}
+
+.flag-tn {
+	background-position: 0 88.016529%
+}
+
+.flag-to {
+	background-position: 0 88.429752%
+}
+
+.flag-tp {
+	background-position: 0 88.842975%
+}
+
+.flag-tr {
+	background-position: 0 89.256198%
+}
+
+.flag-tt {
+	background-position: 0 89.669421%
+}
+
+.flag-tv {
+	background-position: 0 90.082645%
+}
+
+.flag-tw {
+	background-position: 0 90.495868%
+}
+
+.flag-ty {
+	background-position: 0 90.909091%
+}
+
+.flag-tz {
+	background-position: 0 91.322314%
+}
+
+.flag-ua {
+	background-position: 0 91.735537%
+}
+
+.flag-ug {
+	background-position: 0 92.14876%
+}
+
+.flag-gb,
+.flag-uk {
+	background-position: 0 92.561983%
+}
+
+.flag-um {
+	background-position: 0 92.975207%
+}
+
+.flag-us {
+	background-position: 0 93.38843%
+}
+
+.flag-uy {
+	background-position: 0 93.801653%
+}
+
+.flag-uzs {
+	background-position: 0 94.214876%
+}
+
+.flag-va {
+	background-position: 0 94.628099%
+}
+
+.flag-vc {
+	background-position: 0 95.041322%
+}
+
+.flag-ve {
+	background-position: 0 95.454545%
+}
+
+.flag-vg {
+	background-position: 0 95.867769%
+}
+
+.flag-vi {
+	background-position: 0 96.280992%
+}
+
+.flag-vn {
+	background-position: 0 96.694215%
+}
+
+.flag-vu {
+	background-position: 0 97.107438%
+}
+
+.flag-wf {
+	background-position: 0 97.520661%
+}
+
+.flag-wst {
+	background-position: 0 97.933884%
+}
+
+.flag-yer {
+	background-position: 0 98.347107%
+}
+
+.flag-zar {
+	background-position: 0 98.760331%
+}
+
+.flag-zmk {
+	background-position: 0 99.173554%
+}
+
+.flag-zmr {
+	background-position: 0 99.586777%
+}
+
+.flag-zwl {
+	background-position: 0 100%
+}
